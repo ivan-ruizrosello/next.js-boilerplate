@@ -1,0 +1,35 @@
+{
+  "name": "create-next-example-app",
+  "description": "Pagina personal Ivan Ruiz",
+  "license": "MIT",
+  "main": "server/server.js",
+  "author": {
+    "name": "Ivan Ruiz",
+    "email": "ivan.ruizrosello@gmail.com"
+  },
+  "engines": {
+    "node": "10.0.8"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "@zeit/next-sass": "^0.2.0",
+    "module-alias": "^2.1.0",
+    "next": "^6.1.1",
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "validator": "^10.5.0"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
