@@ -6,13 +6,6 @@ const isClient = () => {
 };
 
 const exampleInitialState = {
-  language: { 
-    selected: {},
-    available: [
-      { name: 'English', code: 'en' },
-      { name: 'Español', code: 'es' }
-    ]
-  },
   isClient: isClient()
 };
 
@@ -30,9 +23,10 @@ export function initializeStore (initialState = exampleInitialState) {
     : f => f; // => undefined
 
   const store = createStore(
-    combineReducers({
-      data: reducer
-    }), 
+    // combineReducers({
+    //   data: reducer
+    // }), 
+    reducer,
     initialState,
     compose(devtools)
   );

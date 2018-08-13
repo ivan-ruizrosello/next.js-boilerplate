@@ -17,7 +17,7 @@ class Index extends React.Component {
 const mapStateToProps = (state) => {
   // console.log(state);
   return {
-    isClient: state.data.isClient
+    isClient: state.isClient
   };
 }
 

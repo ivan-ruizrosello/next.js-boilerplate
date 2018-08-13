@@ -3,7 +3,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
-    console.log('Document')
+    // console.log('Document')
     return (
       <html>
         <Head>

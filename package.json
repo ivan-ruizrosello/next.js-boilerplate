@@ -7,9 +7,6 @@
     "name": "Ivan Ruiz",
     "email": "ivan.ruizrosello@gmail.com"
   },
-  "engines": {
-    "node": "10.0.8"
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",
