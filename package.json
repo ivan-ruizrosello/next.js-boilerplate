@@ -8,13 +8,17 @@
     "email": "ivan.ruizrosello@gmail.com"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "next:dev": "next",
+    "next:build": "next build",
+    "next:start": "next start",
+    "start": "NODE_ENV=production || export NODE_ENV=production || SET \"NODE_ENV=production\" && node server/server.js",
+    "development":  "NODE_ENV=development || export NODE_ENV=development || SET \"NODE_ENV=development\" && node server/server.js",
+    "dev": "nodemon --exec \"npm run development\""
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
     "@zeit/next-sass": "^0.2.0",
+    "express": "^4.16.3",
     "module-alias": "^2.1.0",
     "next": "^6.1.1",
     "node-sass": "^4.9.3",
