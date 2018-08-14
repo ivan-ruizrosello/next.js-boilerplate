@@ -8,13 +8,13 @@ class Index extends React.Component {
   }
 
   render  = () => {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div className={css.example}>
         <h1>Index</h1>
         <p>Estado creado en: {this.props.isClient}</p>
         <p>Ahora estamos en: {(typeof window !== 'undefined' && window.document) ? 'client' : 'server'}</p>
-
+        <p>Props.lang (from next-pretty-url / express server): {this.props.lang}</p>
       </div>
     )
   }
