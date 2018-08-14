@@ -58,6 +58,12 @@ npm run dev
 
 ## TODO
 
-- **o** Jest Testing
-- **o** Traductions
-- **o** Next/Link active routes
+- [x] Express
+- [x] Url prettifier
+- [x] SASS
+- [x] Page specific CSS Styling
+- [x] Prop-Types
+- [x] Normalize.css
+- [ ] Jest Testing
+- [ ] Traductions
+- [ ] Next/Link active routes
