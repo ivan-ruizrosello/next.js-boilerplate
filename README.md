@@ -64,7 +64,7 @@ npm run dev
 - [x] Page specific CSS Styling
 - [x] Prop-Types
 - [x] Normalize.css
-- [ ] Next/Link active routes
+- [x] Next/Link active routes
 - [ ] Traductions
 - [ ] Sitemap.xml
 - [ ] Robots.txt
