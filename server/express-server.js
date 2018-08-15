@@ -3,9 +3,9 @@ const express = require('express'),
   PORT = process.env.PORT || 3000;
 
 server.listen(PORT, (err) => {
-  if(err) throw Error(err);
-  console.log(process.env.NODE_ENV)
-  console.log(`Server started on port ${PORT}`)
+  if(err) throw err;
+  
+  console.log(`Server started on port ${PORT} (http://localhost:${PORT})`)
 });
 
 exports.server = server;
