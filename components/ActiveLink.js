@@ -1,21 +1,51 @@
-import { withRouter } from 'next/router';
+import isClient from './utils/isClient';
 
-const ActiveLink = (props) => {
-  const style = {
-    marginRight: 10,
-    color: props.router.asPath == props.href? 'red' : 'black'
+class ActiveLink extends React.Component {
+  state = {
+    href: this.props.href,
+    className: undefined
   }
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    props.router.push(props.href);
+  isActive = () => {
+    if(isClient()) {
+      let location = window.location.pathname;
+      let href;
+      
+      if(location[location.length -1] === '/') 
+        location = location.substring(0, location.length -1);
+      
+      if(this.props.href[this.props.href.length -1] === '/')
+        href = this.props.href.substring(0, this.props.href.length -1);
+      else 
+        href = this.props.href;
+      
+      return location === href
+    }
   }
-  
-  return ( 
-    <a href={props.href} style={style}>
-      {props.children}
-    </a>
-  )
+
+  createClassName = () => {
+    return this.isActive()
+      ? this.props.activeClassName
+      : undefined;
+  }
+
+  componentDidMount = () => {
+    const className = this.createClassName();
+    if(className !== this.state.className){
+      this.setState(prevState => {
+        prevState.className = className;
+        return prevState;
+      });
+    }
+  } 
+
+  render = () => {
+    return (
+      <a href={this.props.href} className={this.state.className}>
+        {this.props.children}
+      </a>
+    );
+  }
 }
 
-export default withRouter(ActiveLink);
+export default ActiveLink;

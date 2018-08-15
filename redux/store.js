@@ -1,9 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
-
-
-const isClient = () => {
-  return (typeof window !== 'undefined' && window.document) ? 'client' : 'server';
-};
+import isClient from '../components/utils/isClient';
 
 const exampleInitialState = {
   isClient: isClient()

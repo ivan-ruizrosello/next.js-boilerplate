@@ -14,18 +14,18 @@ class Index extends React.Component {
     // console.log(this.props)
     return (
       <div className={css.example}>
-        <Link>
-          <ActiveLink href="/home">Home</ActiveLink>
+        <Link href="/home" passHref>
+          <ActiveLink activeClassName='is-active'>Home</ActiveLink>
         </Link>
-        <Link>
-          <ActiveLink href="/inicio">Inicio</ActiveLink>
+        <Link href="/inicio/" passHref>
+          <ActiveLink activeClassName='is-active'>Inicio</ActiveLink>
         </Link>
-        <Link>
-          <ActiveLink href="/">/</ActiveLink>
+        <Link href="/" passHref>
+          <ActiveLink activeClassName='is-active'>/</ActiveLink>
         </Link>
-        
+
         <h1>Index</h1>
-        <p>Estado creado en: {this.props.isClient}</p>
+        <p>Estado de redux creado en: {this.props.isClient}</p>
         <p>Ahora estamos en: {(typeof window !== 'undefined' && window.document) ? 'client' : 'server'}</p>
         <p>Props.lang (from next-pretty-url / express server): {this.props.lang}</p>
       </div>

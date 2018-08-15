@@ -2,13 +2,19 @@
 
 config set by Ivan Ruiz.
 
-- NextJs 
-- Express
-- Url prettifier
-- SASS
-- Page specific CSS Styling
-- Prop-Types
-- Normalize.css
+## TODO
+
+- [x] Express
+- [x] Url prettifier
+- [x] SASS
+- [x] Page specific CSS Styling
+- [x] Prop-Types
+- [x] Normalize.css
+- [x] Next/Link active routes
+- [ ] Traductions
+- [ ] Sitemap.xml
+- [ ] Robots.txt
+- [ ] Jest Testing
 
 ## Dependencies
 
@@ -56,16 +62,3 @@ npm run dev
 ```
 
 
-## TODO
-
-- [x] Express
-- [x] Url prettifier
-- [x] SASS
-- [x] Page specific CSS Styling
-- [x] Prop-Types
-- [x] Normalize.css
-- [x] Next/Link active routes
-- [ ] Traductions
-- [ ] Sitemap.xml
-- [ ] Robots.txt
-- [ ] Jest Testing
