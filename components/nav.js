@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import ActiveLink from './ActiveLink';
 import { translate } from 'react-i18next';
+import { connect } from 'react-redux';
+
+import ActiveLink from './ActiveLink';
 
 const Nav = (props) => {
   console.log(props)
@@ -16,7 +18,7 @@ const Nav = (props) => {
   );
 }
 
-export default translate(['nav'])(Nav);
+export default connect()(translate(['nav'])(Nav));
 
 
 
