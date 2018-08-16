@@ -2,10 +2,11 @@
   "restartable": "rs",
   "verbose": true,
   "watch": [
+    "components",
     "redux",
     "server",
     "static",
-    "components"
+    "tools"
   ],
   "ignore": [
     "./.next",

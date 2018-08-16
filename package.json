@@ -3,6 +3,7 @@
   "description": "Pagina personal Ivan Ruiz",
   "license": "MIT",
   "main": "server/server.js",
+  "version": "~1.6.1",
   "author": {
     "name": "Ivan Ruiz",
     "email": "ivan.ruizrosello@gmail.com"
