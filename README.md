@@ -11,7 +11,7 @@ config set by Ivan Ruiz.
 - [x] Prop-Types
 - [x] Normalize.css
 - [x] Next/Link active routes
-- [ ] Traductions
+- [x] Translations (i18n)
 - [ ] Sitemap.xml
 - [ ] Robots.txt
 - [ ] Jest Testing
