@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing enzyme snapshot components Shallow component 1`] = `
+<div>
+  Hola
+</div>
+`;

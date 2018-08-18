@@ -1,0 +1,39 @@
+{
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,mjs}"
+  ],
+  "setupFiles": [
+    "<rootDir>/config/jest/polyfills.js",
+    "<rootDir>/config/jest/enzyme.js",
+    "raf/polyfill"
+  ],
+  "testMatch": [
+    "<rootDir>/tests/**/__tests__/**/?(*.)(spec|test).{js,jsx,mjs}",
+    "<rootDir>/tests/**/?(*.)(spec|test).{js,jsx,mjs}"
+  ],
+  "testEnvironment": "node",
+  "testURL": "http://localhost",
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+  ],
+  "transform": {
+    "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.(css|scss|sass)$": "<rootDir>/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+  },
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node",
+    "mjs"
+  ]
+}

@@ -12,9 +12,16 @@ config set by Ivan Ruiz.
 - [x] Normalize.css
 - [x] Next/Link active routes
 - [x] Translations (i18n)
-- [ ] Sitemap.xml
-- [ ] Robots.txt
-- [ ] Jest Testing
+- [x] Sitemap.xml
+- [x] Robots.txt
+- [x] Jest Testing : [ 
+    [x] ES6 
+    [x] Supertest
+    [x] React Enzyme 
+    [x] Enzyme to Json
+    [x] Allow css, sass and scss imports
+    [x] Transform file imports
+  ]
 
 ## Dependencies
 
@@ -62,3 +69,16 @@ npm run dev
 ```
 
 
+### Testing 
+
+To start testing with Jest: 
+
+Yarn: 
+```
+yarn test
+```
+
+npm:
+```
+npm run test
+```
