@@ -26,7 +26,7 @@ class Index extends React.Component {
     super(props);
 
     this.i18n = startI18n(props.translations, props.lang);
-  }
+  };
 
   render  = () => {
     console.log(this.props)
@@ -39,8 +39,12 @@ class Index extends React.Component {
         <p>Estado de redux creado en: {this.props.isClient ? 'client' : 'server'}</p>
         <p>Ahora estamos en: {(typeof window !== 'undefined' && window.document) ? 'client' : 'server'}</p>
         <p>Props.lang (from next-pretty-url / express server): {this.props.lang}</p>
+      
+        <p><a href="/sitemap.xml">Sitemap</a></p>
+        <p><a href="/robots.txt">Robots</a></p>
+
       </div>
-    )
+    );
   }
 }
 

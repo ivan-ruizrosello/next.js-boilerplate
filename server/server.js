@@ -1,5 +1,6 @@
 "use strict";
 
+const sitemapAndRobots = require('./sitemapAndRobots');
 const {server} = require('./express-server');
 
 /////////////////////////////////
@@ -14,6 +15,9 @@ const handle = app.getRequestHandler();
 const Router = require('./next-routes').Router;
 
 app.prepare().then(() => {
+
+  sitemapAndRobots({ server });
+
   Router.forEachPattern((page, pattern, defaultParams) => {
     return server.get(pattern, (req, res) => {
        return app.render(req, res, `/${page}`, Object.assign({}, defaultParams), req.query, req.params);
