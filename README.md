@@ -14,14 +14,14 @@ config set by Ivan Ruiz.
 - [x] Translations (i18n)
 - [x] Sitemap.xml
 - [x] Robots.txt
-- [x] Jest Testing : [ 
-    [x] ES6 
-    [x] Supertest
-    [x] React Enzyme 
-    [x] Enzyme to Json
-    [x] Allow css, sass and scss imports
-    [x] Transform file imports
-  ]
+- [x] Jest Testing :  
+    -  [x] ES6 
+    -  [x] Supertest
+    -  [x] React Enzyme 
+    -  [x] Enzyme to Json
+    -  [x] Allow css, sass and scss imports
+    -  [x] Transform file imports
+
 
 ## Dependencies
 
